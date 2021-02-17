@@ -5,8 +5,12 @@ import {Link, withPrefix, classNames} from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
 import NetlifyButton from "./NetlifyButton";
+import netlifyIdentity from "netlify-identity-widget"
 
 export default class Header extends React.Component {
+  componentDidMount() {
+    netlifyIdentity.init({});
+  }
     render() {
         return (
             <header id="masthead" className="site-header outer">
@@ -15,7 +19,7 @@ export default class Header extends React.Component {
                   <div className="site-branding">
                     {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null) ? (
                     <p className="site-logo"><Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}><img src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null))} alt={_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img_alt', null)} /></Link></p>
-                    ) : 
+                    ) :
                     <p className="site-title"><Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>{_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}</Link></p>
                     }
                   </div>
@@ -39,6 +43,7 @@ export default class Header extends React.Component {
                       })}
                       <li><NetlifyButton/></li>
                       </ul>
+                      <div data-netlify-identity-menu />
                     </div>
                   </nav>
                   <button id="menu-open" className="menu-toggle"><span className="screen-reader-text">Close Menu</span><span className="icon-menu" aria-hidden="true" /></button>
