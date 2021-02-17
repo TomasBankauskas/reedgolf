@@ -8,6 +8,14 @@ import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
 
+var netlifyIdentity = {
+    const :identity = useIdentityContext(), // see https://github.com/sw-yx/react-netlify-identity for api of this identity object
+    const :[dialog, setDialog] = React.useState(false),
+    const :name = (identity && identity.user && identity.user.user_metadata && identity.user.user_metadata.name) || "NoName",
+
+    const :isLoggedIn = identity && identity.isLoggedIn
+}
+
 
 
 export default class Body extends React.Component {
