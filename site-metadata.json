@@ -83,5 +83,6 @@
             }
         ]
     },
-    "title": "Stackbit Libris Theme"
+    "title": "Stackbit Libris Theme",
+    "domain": "https://reedgolf.netlify.app"
 }
