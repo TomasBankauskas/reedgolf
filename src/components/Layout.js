@@ -8,12 +8,11 @@ import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
 
-var netlifyIdentity = {
-    const :identity = useIdentityContext(), // see https://github.com/sw-yx/react-netlify-identity for api of this identity object
-    const :[dialog, setDialog] = React.useState(false),
-    const :name = (identity && identity.user && identity.user.user_metadata && identity.user.user_metadata.name) || "NoName",
-
-    const :isLoggedIn = identity && identity.isLoggedIn
+const netlifyIdentity = {
+    identity : useIdentityContext(), // see https://github.com/sw-yx/react-netlify-identity for api of this identity object
+    [dialog, setDialog] : React.useState(false),
+    name :  (identity && identity.user && identity.user.user_metadata && identity.user.user_metadata.name) || "NoName",
+    isLoggedIn : identity && identity.isLoggedIn
 }
 
 
