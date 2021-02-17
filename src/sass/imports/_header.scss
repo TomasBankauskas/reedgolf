@@ -212,7 +212,7 @@
       transition: opacity .15s ease-in-out,visibility 0s ease-in-out .15s;
       visibility: hidden;
       width: 100%;
-      z-index: 998;
+      z-index: 99;
     }
   }
 
@@ -230,7 +230,7 @@
     transition: right .3s ease-in-out, visibility 0s .3s ease-in-out;
     visibility: hidden;
     width: 100%;
-    z-index: 999;
+    z-index: 99;
   }
 
   .site-nav-inside {
