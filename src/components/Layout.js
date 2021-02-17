@@ -9,8 +9,9 @@ import Header from './Header';
 import Footer from './Footer';
 
 export default class Body extends React.Component {
-    identity = useIdentityContext()
+    
     render() {
+        const identity = useIdentityContext()
         return (
             <React.Fragment>
                 <Helmet>
@@ -48,7 +49,6 @@ export default class Body extends React.Component {
                   <Header {...this.props} />
                   <main id="content" className="site-content">
                     {this.props.children}
-                    <pre>{JSON.stringify(identity, null, 2)}</pre>
                   </main>
                   <Footer {...this.props} />
                 </div>
