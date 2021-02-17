@@ -15,7 +15,7 @@ const NetlifyButton = () => {
         <button className="button menu-button" onClick={() => setDialog(true)}>
           {isLoggedIn ? `Hello ${name}, Log out here!` : "LOG IN"}
         </button>
-      <IdentityModal className="put-on-top" showDialog={dialog} onCloseDialog={() => setDialog(false)} />
+      <IdentityModal showDialog={dialog} onCloseDialog={() => setDialog(false)} />
     </>
   )
 }
