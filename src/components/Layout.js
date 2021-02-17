@@ -1,6 +1,7 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
 import _ from 'lodash';
+import { useIdentityContext } from "react-netlify-identity-widget"
 
 import {withPrefix, attribute} from '../utils';
 import '../sass/main.scss';
@@ -8,6 +9,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 export default class Body extends React.Component {
+    identity = useIdentityContext()
     render() {
         return (
             <React.Fragment>
@@ -46,6 +48,7 @@ export default class Body extends React.Component {
                   <Header {...this.props} />
                   <main id="content" className="site-content">
                     {this.props.children}
+                    <pre>{JSON.stringify(identity, null, 2)}</pre>
                   </main>
                   <Footer {...this.props} />
                 </div>
