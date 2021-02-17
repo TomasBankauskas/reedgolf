@@ -1,6 +1,6 @@
 import React from "react"
 import IdentityModal, { useIdentityContext } from "react-netlify-identity-widget"
-import "react-netlify-identity-widget/styles.css" // delete if you want to bring your own CSS
+
 
 const NetlifyButton = () => {
   const identity = useIdentityContext() // see https://github.com/sw-yx/react-netlify-identity for api of this identity object
