@@ -10,9 +10,8 @@ import Footer from './Footer';
 
 export default class Body extends React.Component {
     constructor(props) {
-        
+        super(props);
 
-        const identity = useIdentityContext();
 
     }
     render() {
