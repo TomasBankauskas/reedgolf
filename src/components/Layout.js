@@ -11,7 +11,7 @@ import Footer from './Footer';
 export default class Body extends React.Component {
     constructor(props) {
         super(props);
-        identity = useIdentityContext()
+        let identity = useIdentityContext()
     }
     
 
