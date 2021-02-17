@@ -1,5 +1,4 @@
 import React from 'react';
-import IdentityModal, { useIdentityContext } from "react-netlify-identity-widget"
 import {Helmet} from 'react-helmet';
 import _ from 'lodash';
 
@@ -53,5 +52,4 @@ export default class Body extends React.Component {
             </React.Fragment>
         );
     }
-    
 }
