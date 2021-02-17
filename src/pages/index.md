@@ -103,7 +103,7 @@ sections:
         style: primary
 seo:
   title: Reed Golf
-  description: The preview of the Libris theme
+  description: Stop sucking at golf! Try this instead.
   extra:
     - name: 'og:type'
       value: website
