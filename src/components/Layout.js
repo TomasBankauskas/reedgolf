@@ -1,20 +1,11 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
 import _ from 'lodash';
-import { useIdentityContext } from "react-netlify-identity-widget"
 
 import {withPrefix, attribute} from '../utils';
 import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
-
-const netlifyIdentity = {
-    identity : useIdentityContext(), // see https://github.com/sw-yx/react-netlify-identity for api of this identity object
-    dialog : React.useState(false),
-    setDialog: React.useState(false),
-    name :  (identity && identity.user && identity.user.user_metadata && identity.user.user_metadata.name) || "NoName",
-    isLoggedIn : identity && identity.isLoggedIn
-}
 
 
 
