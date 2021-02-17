@@ -4,6 +4,7 @@ import _ from 'lodash';
 import {Link, withPrefix, classNames} from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
+import NetlifyButton from "./NetlifyButton";
 
 export default class Header extends React.Component {
     render() {
@@ -36,6 +37,7 @@ export default class Header extends React.Component {
                             </li>
                           )
                       })}
+                      <li><NetlifyButton/></li>
                       </ul>
                     </div>
                   </nav>
