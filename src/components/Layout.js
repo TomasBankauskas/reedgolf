@@ -11,7 +11,7 @@ import Footer from './Footer';
 export default class Body extends React.Component {
     
     render() {
-        identity = useIdentityContext()
+        let identity = useIdentityContext()
         return (
             <React.Fragment>
                 <Helmet>
