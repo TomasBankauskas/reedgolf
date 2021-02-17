@@ -112,7 +112,7 @@ seo:
       value: Reed Golf
       keyName: property
     - name: 'og:description'
-      value: The preview of the Libris theme
+      value: This is my new website.
       keyName: property
     - name: 'og:image'
       value: images/4.jpg
