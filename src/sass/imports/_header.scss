@@ -85,7 +85,7 @@
 
   .site-navigation {
     margin-left: auto;
-    z-index: 99;
+    
   }
 
   .menu {
@@ -93,6 +93,7 @@
     align-items: center;
     display: -ms-flexbox;
     display: flex;
+    z-index: 99;
   }
 
   .menu-item {
