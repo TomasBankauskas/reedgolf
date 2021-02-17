@@ -15,6 +15,12 @@ module.exports = {
             }
         },
         {
+            resolve: `gatsby-plugin-netlify-identity`,
+            options: {
+                url: `https://reedgolf.netlify.app/` // required!
+            }
+        },
+        {
             resolve: `gatsby-plugin-sass`,
             options: {}
         },
