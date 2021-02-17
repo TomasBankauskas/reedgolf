@@ -8,15 +8,10 @@ import '../sass/main.scss';
 import Header from './Header';
 import Footer from './Footer';
 
+
+
 export default class Body extends React.Component {
-    constructor(props) {
-        super(props);
-        let identity = useIdentityContext()
-    }
-    
-
-
-
+ 
     render() {
         return (
             <React.Fragment>
